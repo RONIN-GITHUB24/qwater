@@ -1,0 +1,220 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Oswald;
+  src: url(fonts/Oswald-VariableFont_wght.ttf);
+}
+/* header */
+.logo {
+  font-family: Oswald;
+  position: absolute;
+  left: 30px;
+  width: 110px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+  background-color: white;
+  z-index: 99;
+}
+.header a:hover {
+  color: blue;
+  transform: scale(1.1);
+}
+.header a {
+  text-decoration: none;
+  font-family: Oswald;
+  color: black;
+  font-size: 20px;
+  transition: 0.5s ease;
+  width: 80px;
+  flex-shrink: 0;
+  
+}
+/* offcanvas */
+.offcanvas{
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+.btn-close{
+      display: block;
+      position: absolute;
+      right: 5px;
+      top: 30px;
+}
+.btn-close button{
+      margin-top: 20px;
+      border-bottom: 2px solid red;
+}
+.offcanvas button{
+  margin-top: 20px;
+  color: black;
+  outline: none;
+  border: 1px solid black;
+  font-family: Oswald;
+  font-size: 20px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.5s ease;
+  }
+  .offcanvas button:hover {
+    transform: scale(1.1);
+  }
+  .offcanvas h2{
+      font-family: Oswald;
+      margin-top: 10px;
+  }
+  .btn-primary{
+    display: none;
+  }
+  .btn i{
+    display: none;
+    align-items: center;
+  }
+  .btn{
+    cursor: default;
+  }
+/* merchandise section */
+
+.merch-text-container {
+  display: flex;
+  justify-content: center;
+}
+.merch-text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: Oswald;
+  flex-shrink: 0;
+}
+.merch{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 200px;
+}
+.first-row {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+}
+.first-row div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 24%;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.merch img {
+  width: 100%;
+  height: 350px;
+  border-bottom: 2px solid black;
+}
+.merch p {
+  margin-top: 5px;
+  font-family: Oswald;
+}
+.merch h2 {
+  font-family: Oswald;
+  margin-bottom: 10px;
+}
+.merch button {
+  width: 80%;
+  outline: none;
+  color: blue;
+  background-color: chartreuse;
+  font-family: Oswald;
+  font-size: 25px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.merch button:hover {
+  transform: scale(1.1);
+}
+.active{
+  display: block;
+  color: aqua;
+  visibility: visible;
+  filter: blur(20px);
+}
+.form-container{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 350px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: red;
+  border: 2px solid black;  
+  position: absolute;
+  visibility: hidden;
+  display: none;
+  z-index: 10000;
+}
+/* extra extra large  */
+@media (max-width : 1400px){
+  .first-row div {
+    width: 19%;
+  }
+}
+/* extera large */
+ @media (max-width : 1200px){
+  .header a{
+    font-size: 19px;
+  }
+  .first-row div {
+    width: 24%;
+  }
+ }
+ /* large */
+ @media (max-width : 992px){
+  .first-row div {
+    width: 32%;
+  }
+ }
+ /* medium */
+ @media (max-width : 768px){
+  .first-row div {
+    width: 49%;
+  }
+ }
+ /* small */
+ @media (max-width : 576px){
+  .header a{
+    display: none;
+  }
+  .header h1{
+    margin: auto;
+  }
+  .btn i{
+    display: block;
+  }
+  .first-row div {
+    width: 80%;
+  }
+ }
+ /* extra small */
+ @media (min-width: 576px){
+
+ }
